@@ -22,6 +22,21 @@
 
 /* deuxième liste à puces avec des losanges */
 
+.list2 li{
+    list-style: none;
+    
+
+}
+ .list2 li:before{
+   content: "";
+   border: 2px solid blue;
+   display: inline-block;
+   height: 4px;
+   width: 4px;
+   vertical-align: middle;
+   transform:rotate(45deg);
+   margin-right: 5px;
+}
 
 
 /* troisième liste à puces avec des compteurs css */
