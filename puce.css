@@ -1,6 +1,24 @@
 /* première liste à puces avec des formes triangulaires */
 
-
+.list1 li{
+    list-style: none;
+}
+/* Ajouter un élément avec un contenu vide et une largeur et hauteur nulles directement avant les "li" */
+.list1 li:before{
+   content: "";
+   width: 0; 
+   height: 0; 
+ /*Ajouter une bordure de 5px , ce qui va construire 4 triangles  */
+   border: 5px solid black; 
+   /* Rendre les triangles de haut de droite et de bas transparents */
+   border-top-color: transparent; 
+   border-right-color: transparent; 
+   border-bottom-color: transparent;
+   /* aligner les triangle avec le texte */
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 5px;
+}
 
 /* deuxième liste à puces avec des losanges */
 
