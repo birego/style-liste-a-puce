@@ -41,4 +41,27 @@
 
 /* troisième liste à puces avec des compteurs css */
 
+.list3{
+	counter-reset: c1;
+	list-style-type:none;
+}
+.list3 li{
+	margin-bottom: 5px;
+}
+	
+.list3 li:before{
+    /* Incrémentation  du compteur c1 avant  chaque li */
+    counter-increment: c1;
+    /* Attribuer la valeur du compteur c1 au contenu de l’élément qui vient directement avant les "li"*/
+    content: counter(c1); 
+    /* Design du contenu */
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1px 5px;
+    color: white;
+    background-color: blue;
+    margin-right: 5px;
+    font-weight: bold;
+	 }
 
